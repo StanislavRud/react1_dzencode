@@ -10,7 +10,7 @@ const Header = () => {
                 <div className={style.headerTime}>
                     <div id="dateWeekDisplay"></div>
                     <div id="dayOfMounth"></div>
-                    <img src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/9-512.png" alt="clock"/>
+                    {/*<div><img src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/9-512.png" alt="clock"/></div>*/}
                     <div id="timedisplay"></div>
                 </div>
             </div>
@@ -32,11 +32,10 @@ function getDate() {
     let day = new Array("Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота");
     let dayOnWeek = day[date.getDay()];
 
-    //По надобности условие ниже повторить с minutes и hours
     if (seconds < 10) {
         seconds = '0' + seconds;
     }
-    document.getElementById('dayOfMounth').innerHTML = today + ' ' + month + ' ' + year
+    document.getElementById('dayOfMounth').innerHTML = today + ' ' + month + ' ' + year;
     document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
     document.getElementById('dateWeekDisplay').innerHTML = dayOnWeek;
 }

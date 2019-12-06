@@ -3,9 +3,21 @@
     text-align: center;
 }
 
+
+.nav div {
+    margin-top: 25px;
+}
+
 .nav img {
     display: block;
     margin: 0 auto;
     width: 150px;
+
+
     /*border-radius: 75px;*/
+}
+
+.nav a.activeLink {
+    padding: 0 10px;
+    border-bottom: 5px solid green;
 }

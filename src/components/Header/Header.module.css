@@ -12,6 +12,6 @@
     height: 100%;
 }
 
-.headerTime img {
-    width: 20px;
+.headerTime div:nth-child(n+2) {
+    display: inline-block;
 }

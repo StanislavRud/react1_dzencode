@@ -8,19 +8,19 @@ const Navbar = () => {
         <nav className={style.nav}>
             <img src="https://kwork.ru/pics/t3/85/109231-1.jpg" alt="avatar"/>
             <div>
-                <NavLink to='/prihods'>ПРИХОД</NavLink>
+                <NavLink to='/prihods' activeClassName={style.activeLink}>ПРИХОД</NavLink>
             </div>
             <div>
-                <NavLink to='/groups'>ГРУППЫ</NavLink>
+                <NavLink to='/groups' activeClassName={style.activeLink}>ГРУППЫ</NavLink>
             </div>
             <div>
-                <NavLink to='/products'>ПРОДУКТЫ</NavLink>
+                <NavLink to='/products' activeClassName={style.activeLink}>ПРОДУКТЫ</NavLink>
             </div>
             <div>
-                <NavLink to='/users'>ПОЛЬЗОВАТЕЛИ</NavLink>
+                <NavLink to='/users' activeClassName={style.activeLink}>ПОЛЬЗОВАТЕЛИ</NavLink>
             </div>
             <div>
-                <NavLink to='/settings'>НАСТРОЙКИ</NavLink>
+                <NavLink to='/settings' activeClassName={style.activeLink}>НАСТРОЙКИ</NavLink>
             </div>
         </nav>
     )
